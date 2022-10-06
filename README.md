@@ -2,4 +2,4 @@
 
 A redesign of https://www.konstnarsnamnden.se/
 
-Chas group 5
+Used HTML and SCSS
