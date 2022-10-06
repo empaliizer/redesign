@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+.hot-img, .hot-img-2{
+    width: 80%;
+}
+
+@media (max-width: $tablet-screen) {
+    .hot-img-3 {
+    width: 50%;
+    }
+}
+
+.hot-img-2, .hot-img-3 {
+    display: none;
+
+    @media (max-width: $tablet-screen) {
+        display: flex;
+        margin-top: 30px;
+    }
+}

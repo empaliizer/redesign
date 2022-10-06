@@ -1,0 +1,90 @@
+// Main section
+
+.container {
+  @include display-flex-center;
+
+  .wrapper {
+    width: 100%;
+    max-width: 1200px;
+
+    @media screen and (max-width: $tablet-screen) {
+      width: 90%;
+    }
+  }
+}
+
+.flexbox-container {
+  display: flex;
+  justify-content: center;
+  column-gap: 5rem;
+}
+
+.flexbox-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  min-height: 100px;
+  border-bottom: 1px solid $forth-color;
+  border-top: 1px solid $forth-color;
+  padding-top: 2.2rem;
+  margin-bottom: 5rem;
+
+  @media screen and (max-width: $tablet-screen) {
+    display: none;
+  }
+}
+
+.head-section {
+  background: url(Img/main-main-bild.jpg);
+  height: 572px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 5rem;
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: $tablet-screen) {
+    margin: unset;
+    background: none;
+    height: 500px;
+
+  }
+
+  .headertext {
+    text-align: left;
+    width: 40vh;
+
+    @media screen and (max-width: $tablet-screen) {
+    width: 90%;
+    }
+  }
+
+  &--inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.imgcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 110px;
+  margin-bottom: 200px;
+
+  @media screen and (max-width: $mobile-screen) {
+    display: contents;
+  }
+
+  figcaption {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 500;
+
+    @media screen and (max-width: $mobile-screen) {
+      margin-bottom: 75px;
+    }
+  }
+}

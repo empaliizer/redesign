@@ -1,0 +1,18 @@
+.form-button {
+  @include button;
+}
+
+.nav-button {
+  @include button;
+  margin: $margin-header;
+  }
+
+.search-bar {
+  button {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  color: $third-color;
+  }
+}

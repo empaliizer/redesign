@@ -1,0 +1,43 @@
+.aside-navbar {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+
+    li {
+        margin-bottom: 16px;
+    }
+}
+
+.nav-link {
+    display: inline-block;
+    margin: 0 20px 15px;
+    a:hover {
+        font-weight: 500;
+    }
+
+    @media screen and (max-width: $tablet-screen) {
+    margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: $tablet-screen) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+// Navigation undersidor
+
+aside {
+    width: 90%;
+    border-right: 1px $third-color solid;
+    margin-right: 100px;
+
+    @media screen and (max-width: $tablet-screen) {
+        display: none;
+    }
+}
+
